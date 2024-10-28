@@ -3,7 +3,7 @@ const db = require('./db');
 const app = express();
 
 const bosyParser = require('body-parser');
-app.use(bosyParser.json());
+app.use(bodyParser.json());
 
 const Person = require('./models/Person');
 
