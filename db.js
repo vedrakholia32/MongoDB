@@ -4,11 +4,11 @@ const mongoose = require('mongoose');
 const mongoURL = 'mongodb://localhost:27017/hotels' // Replace 'mydatabase' with your database name
 
 // Set up MongoDB connection
-mongoose.connect(mongoURL)
+mongoose.connect(mongoURL);
 
 // Get the default connecyion
 // Mongoose maintains a default connection representing the MOngoDB connection
-const db = mongoose.connection
+const db = mongoose.connection;
 
 db.on('connected', () => {
     console.log('connected to MongoDB server');
